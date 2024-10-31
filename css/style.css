@@ -1,0 +1,97 @@
+.header-main{
+    max-width: 1880px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/Honolulu_Hawaii.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header-sticky{
+    background-color: black;
+    padding:35px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    
+    
+}
+.ul-header{
+    display: flex;
+    column-gap: 40px;
+}
+.fa-solid{
+    color: white;
+}
+.number{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.img{
+    width: 25px;
+    height:25px;
+}
+.a-header{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 30.4px;
+    text-transform: capitalize;
+}
+.burger{
+    display: none;
+}
+.header-texts{
+    max-width: 690px;
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.p1{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 38px;
+    
+}
+.h1{
+    font-family: 'Roboto';
+    font-size: 3.75rem;
+    line-height: 78px;
+    color:white;
+}
+.form{
+    margin-top: 70px;
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+justify-content: center;
+align-items: center;
+}
+.label{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style:italic;
+}
+.input{
+    height: 30px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.search{
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+}
+.input::placeholder{
+    color: gray;
+}
