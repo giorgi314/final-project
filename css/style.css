@@ -1,6 +1,6 @@
 .header-main{
     max-width: 1880px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url(../images/Honolulu_Hawaii.webp);
     background-size: cover;
@@ -94,4 +94,51 @@ align-items: center;
 }
 .input::placeholder{
     color: gray;
+}
+
+                   /* slider styles */
+
+
+.slider {
+    display: flex;
+    margin-top: 50px;
+}
+.slider .slider_item {
+    width: 350px;
+    height: 250px;
+    margin:30px;
+}
+.slider .slider_item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.section2{
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 10px;
+	background-color: #E9E9E9;
+	padding:70px 30px;
+    
+}
+.sec2-texts{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    
+}
+.sec2-h2{
+    font-family: 'Roboto';
+    font-size: 40px;
+    line-height: 52px;
+    color: #1A1A1A;
+}
+.sec2-span{
+    /* font family roboto regular */
+    font-size: 17px;
+    line-height: 32px;
+    color: #1A1A1A;
 }
