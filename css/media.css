@@ -1,4 +1,7 @@
 @media(max-width:1024px){
+    .header-sticky{
+        height: 100px;
+    }
     .navigation{
         display: none;
     }
@@ -18,16 +21,38 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    
+    .sec3-main{
+        height: 100vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "box1 box1 box2"
+        "box3 box4 box5"
+        "box6 box6 box6";
+        row-gap: 10px;
+    }
 }
 
 
 @media(max-width:768px){
     .header-sticky{
+        height: 120px;
         padding: 35px 0;
     }
     .ul-header{
         column-gap: 20px;
+    }
+    .sec2-texts{
+        width: 100%;
+    }
+    .sec3-main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "box1 box1"
+        "box2 box3"
+        "box4 box5"
+        "box6 box6"
     }
 }
 
@@ -56,5 +81,16 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
+    .sec3-main{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "box1 box1"
+        "box2 box2"
+        "box3 box3"
+        "box4 box4"
+        "box5 box5"
+        "box6 box6"
+    }
 }
