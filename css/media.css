@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media(max-width:1024px){
     .header-sticky{
         height: 100px;
@@ -19,18 +26,26 @@
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .sec3-main{
-        height: 100vh;
+        -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+        -ms-grid-rows: 1fr 10px 1fr 10px 1fr;
         grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
+            grid-template-areas: 
         "box1 box1 box2"
         "box3 box4 box5"
         "box6 box6 box6";
         row-gap: 10px;
     }
+    /* .sec6-boxes-block{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    
+    } */
 }
 
 
@@ -40,19 +55,63 @@
         padding: 35px 0;
     }
     .ul-header{
-        column-gap: 20px;
+        -webkit-column-gap: 20px;
+           -moz-column-gap: 20px;
+                column-gap: 20px;
     }
     .sec2-texts{
         width: 100%;
     }
     .sec3-main{
+        -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+        -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
+            grid-template-areas: 
         "box1 box1"
         "box2 box3"
         "box4 box5"
         "box6 box6"
+    }
+    .section4{
+        padding: 80px 0;
+    }
+    .sec4-boxes-block{
+        
+        -ms-grid-columns: 1fr 50px 1fr;
+        
+        grid-template-columns: repeat(2, 1fr);
+        -ms-grid-rows: 1fr 70px 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        -webkit-column-gap: 50px;
+           -moz-column-gap: 50px;
+                column-gap: 50px;
+        row-gap:70px ;
+    }
+    .sec4-boxes-block > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .sec4-boxes-block > *:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+    .sec4-boxes-block > *:nth-child(3){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    .sec4-boxes-block > *:nth-child(4){
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+    .sec5-box{
+        width: 47%;
+    }
+    .sec6-boxes-block{
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    
     }
 }
 
@@ -63,34 +122,79 @@
     }
     .header-sticky{
         padding: 35px 40px;
+        height: 80px;
     }
     .ul-header{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     
     .activesticky{
-        align-items:flex-start;
+        -webkit-box-align:start;
+            -ms-flex-align:start;
+                align-items:flex-start;
         height: 50vh;
         background-color:#00559A;
+        -webkit-transition: all 2s ;
+        -o-transition: all 2s ;
         transition: all 2s ;
     }
     .number.activenumber{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: absolute;
         top: 120px;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .sec3-main{
         width: 90%;
+        -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+        -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
+            grid-template-areas: 
         "box1 box1"
         "box2 box2"
         "box3 box3"
         "box4 box4"
         "box5 box5"
         "box6 box6"
+    }
+    .sec4-boxes-block{
+        
+        -ms-grid-columns: 1fr;
+        
+        grid-template-columns: 1fr;
+        -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .sec4-boxes-block > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .sec4-boxes-block > *:nth-child(2){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    .sec4-boxes-block > *:nth-child(3){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    .sec4-boxes-block > *:nth-child(4){
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+    .sec5-box{
+        width: 100%;
+    }
+    .sec6-boxes-block{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
