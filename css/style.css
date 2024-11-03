@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .example {
     display: -ms-grid;
     display: grid;
@@ -15,8 +22,8 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: -o-linear-gradient(top, white, black);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: linear-gradient(to bottom, white, black);
 }.header{
     height: 80px;
@@ -266,7 +273,7 @@ row-gap: 10px;
        -moz-column-gap: 30px;
             column-gap: 30px;
     row-gap: 10px;
-        grid-template-areas: 
+            grid-template-areas: 
     "box1 box1 box2 box3"
     "box4 box5 box6 box6"
     ;
@@ -575,3 +582,94 @@ textarea{
 .sec7-submit:hover {
     background-color: #45a049;
   }
+
+
+              /* footer styles */
+.foot-up{
+    background-color: #1A1A1A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 25px;
+    padding: 40px 0;
+    text-align: center;
+}
+.foot-input{
+    max-width: 500px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+}
+.foot-mail{
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #222121;
+    border-radius: 30px;
+}
+.foot-btn{
+    width: 25%;
+    margin: 0 auto;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+.foot-h2,.foot-p,.foot-btn{
+    color: white;
+}
+.foot-mail::-webkit-input-placeholder{
+    color: white;
+}
+.foot-mail::-moz-placeholder{
+    color: white;
+}
+.foot-mail:-ms-input-placeholder{
+    color: white;
+}
+.foot-mail::-ms-input-placeholder{
+    color: white;
+}
+.foot-mail::placeholder{
+    color: white;
+}
+
+.foot-down{
+    background-color: #222121;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 100px;
+}
+.social{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+}
+.copy-p,.fa-facebook-f,.fa-twitter,.fa-instagram{
+    color: white;
+}

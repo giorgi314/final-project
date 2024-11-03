@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 @media(max-width:1024px){
     .header-sticky{
         height: 100px;
@@ -35,7 +36,7 @@
         grid-template-columns: repeat(3, 1fr);
         -ms-grid-rows: 1fr 10px 1fr 10px 1fr;
         grid-template-rows: repeat(3, 1fr);
-            grid-template-areas: 
+                grid-template-areas: 
         "box1 box1 box2"
         "box3 box4 box5"
         "box6 box6 box6";
@@ -67,7 +68,7 @@
         grid-template-columns: repeat(2, 1fr);
         -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
-            grid-template-areas: 
+                grid-template-areas: 
         "box1 box1"
         "box2 box3"
         "box4 box5"
@@ -112,6 +113,31 @@
         grid-template-columns: repeat(2, 1fr);
         row-gap: 30px;
     
+    }
+    .foot-down{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 25px;
+    }
+    .brand{
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+    .social{
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+    }
+    .copyright{
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
     }
 }
 
@@ -158,7 +184,7 @@
         grid-template-columns: repeat(2, 1fr);
         -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
-            grid-template-areas: 
+                grid-template-areas: 
         "box1 box1"
         "box2 box2"
         "box3 box3"
@@ -196,5 +222,8 @@
     .sec6-boxes-block{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    }
+    .foot-down{
+        padding: 10px 0px;
     }
 }
